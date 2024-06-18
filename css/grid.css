@@ -1,0 +1,68 @@
+/*give the display property grid to the container*/
+
+.grid-container {
+    display: grid;
+    /*1`. Define rows using ''*/
+    /*2. Define what grid you want seen on the row*/
+    grid-template-areas: 
+    'navsection navsection navsection navsection navsection navsection'
+    'sidemenua sidemenua bannersection bannersection bannersection sidemenub'
+    'mainsection mainsection mainsection mainsection mainsection mainsection'
+    'footersection footersection footersection footersection footersection footersection'
+    
+    ;
+}
+
+#navsection{
+    background-color: aquamarine;
+    grid-area: navsection;
+}
+
+#bannersection {
+    grid-area: bannersection;
+}
+
+#sidemenua {
+    background-color: lightgreen;
+    grid-area: sidemenua;
+}
+
+#sidemenub {
+    background-color: steelblue;
+    grid-area: sidemenub;
+}
+
+#mainsection {
+    background-color: brown;
+    grid-area: mainsection;
+}
+
+#footersection {
+    background-color: green;
+    grid-area: footersection;
+}
+
+/*when writing media queries position it at the very bottom of the page*/
+
+@media only screen and (max-width: 600px){
+    body {
+        background-color: purple;
+    }
+
+    /* display : property */
+.grid-container {
+    display: grid;
+    /* 1. define rows using '' */
+    /* 2. Define what grid area you want seen on the row */
+    grid-template-areas: 
+    'navsection navsection navsection navsection navsection navsection'
+    'sidemenua sidemenua sidemenua sidemenua sidemenua sidemenua'
+    'bannersection bannersection bannersection bannersection bannersection bannersection'
+    'sidemenub sidemenub sidemenub sidemenub sidemenub sidemenub'
+    'mainsection mainsection mainsection mainsection mainsection mainsection'
+    'footersection footersection footersection footersection footersection footersection'
+    ;
+}
+
+}
+

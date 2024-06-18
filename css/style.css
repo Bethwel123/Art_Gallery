@@ -1,0 +1,30 @@
+/* external css*/
+/* using element name */
+body {
+    margin: 0;
+    padding: 0;
+}
+button {
+    background-color: black;
+    color: red;
+    border-radius: 8px;
+
+}
+
+img {
+    border-radius: 50%;
+}
+
+.paraClass {
+    text-decoration-line: overline underline;
+}
+
+#paraName {
+    font-family: monospace, sans-serif;
+    background: blue;
+}
+
+.bitGreen {
+    background: green;
+    color: black;
+}
